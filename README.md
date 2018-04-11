@@ -11,7 +11,6 @@
     popView.arrowDirectionPriorityOrder = @[@1];//@[@4,@3,@2,@1];
     [popView popViewShow:YES];
     
-    方法2：
     
     UIPopView *popView = [[UIPopView alloc] initWithPopOverContentSize:CGSizeMake(180, 200)];
     [popView setColor:WHITE_COLOR];

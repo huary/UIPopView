@@ -11,8 +11,11 @@
     popView.arrowDirectionPriorityOrder = @[@1];//@[@4,@3,@2,@1];
     [popView popViewShow:YES];
     
-    
-    UIPopView *popView = [[UIPopView alloc] initWithPopOverContentSize:CGSizeMake(180, 200)];
+    
+    
+    
+    
+        UIPopView *popView = [[UIPopView alloc] initWithPopOverContentSize:CGSizeMake(180, 200)];
     [popView setColor:WHITE_COLOR];
     popView.delegate = self;
     popView.dataSource = self;

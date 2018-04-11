@@ -14,8 +14,8 @@
     
     
     
-    
-    UIPopView *popView = [[UIPopView alloc] initWithPopOverContentSize:CGSizeMake(180, 200)];
+    方法2：
+    UIPopView *popView = [[UIPopView alloc] initWithPopOverContentSize:CGSizeMake(180, 200)];
     [popView setColor:WHITE_COLOR];
     popView.delegate = self;
     popView.dataSource = self;

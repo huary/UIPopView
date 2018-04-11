@@ -2,8 +2,9 @@
 
 一个能自动根据方向显示UIPopView，使用简单，可以找到最为合适的显示方向和区域
 
+# 使用方法1
 
-    UIPopView *popView = [[UIPopView alloc] initWithPopOverContentSize:CGSizeMake(180, 200) fromOverView:sender showInView:toView];
+    UIPopView *popView = [[UIPopView alloc] initWithPopOverContentSize:CGSizeMake(180, 200) fromOverView:sender showInView:toView];
     [popView setColor:WHITE_COLOR];
     popView.delegate = self;
     popView.dataSource = self;
@@ -15,6 +16,7 @@
     
     
 # 方法2
+
     UIPopView *popView = [[UIPopView alloc] initWithPopOverContentSize:CGSizeMake(180, 200)];
     [popView setColor:WHITE_COLOR];
     popView.delegate = self;

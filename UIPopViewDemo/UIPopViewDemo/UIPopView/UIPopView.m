@@ -175,7 +175,9 @@ static const NSTimeInterval animationTimeInterval = 0.2;
     
     CGFloat leftRightOffset = width * popOverViewLeftRightMinOffsetWithScreenWidthRatio;
     CGFloat topBottomOffset = height * popOverViewTopBottomMinOffsetWithScreenHeightRatio;
-    _popViewEdgeInsets = UIEdgeInsetsMake(topBottomOffset, leftRightOffset, topBottomOffset, leftRightOffset);
+    CGFloat offset = MIN(leftRightOffset, topBottomOffset);
+//    _popViewEdgeInsets = UIEdgeInsetsMake(topBottomOffset, leftRightOffset, topBottomOffset, leftRightOffset);
+    _popViewEdgeInsets = UIEdgeInsetsMake(offset, offset, offset, offset);
 }
 
 -(void)_initArrowDirectionPriorityOrder

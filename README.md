@@ -7,7 +7,6 @@
     UIPopView *popView = [[UIPopView alloc] initWithPopOverContentSize:CGSizeMake(180, 200)];
     popView.delegate = self;
     popView.dataSource = self;
-    popView.arrowDirectionPriorityOrder = @[@1];//@[@4,@3,@2,@1];
     [popView popViewFromOverView:sender showInView:toView animated:NO];
 
 方法2：
@@ -16,7 +15,6 @@
     UIPopView *popView = [[UIPopView alloc] initWithPopOverContentSize:CGSizeMake(180, 200) fromRect:popRect];
     popView.delegate = self;
     popView.dataSource = self;
-    popView.arrowDirectionPriorityOrder = @[@1];//@[@4,@3,@2,@1];
     [popView popViewFromOverView:sender showInView:nil animated:YES];
 
 方法3：
@@ -24,5 +22,4 @@
     UIPopView *popView = [[UIPopView alloc] initWithPopOverContentSize:CGSizeMake(180, 200) fromOverView:sender showInView:toView];
     popView.delegate = self;
     popView.dataSource = self;
-    popView.arrowDirectionPriorityOrder = @[@1];//@[@4,@3,@2,@1];
     [popView popViewShow:YES];

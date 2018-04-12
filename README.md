@@ -11,7 +11,7 @@
     popView.separatorLineColor = RGB_WITH_INT_WITH_NO_ALPHA(0X666666);
     popView.arrowDirectionPriorityOrder = @[@1];//@[@4,@3,@2,@1];
     [popView popViewFromOverView:sender showInView:toView animated:NO];
-    
+
 方法2：
 
     CGRect popRect = [sender.superview convertRect:sender.frame toView:toView];

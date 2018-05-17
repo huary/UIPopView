@@ -136,13 +136,12 @@
     
     //方法三
     UIPopView *popView = [[UIPopView alloc] initWithPopOverContentSize:CGSizeMake(180, 200) fromOverView:sender showInView:toView];
-    [popView setColor:WHITE_COLOR];
     popView.delegate = self;
     popView.dataSource = self;
-    popView.separatorLineColor = RGB_WITH_INT_WITH_NO_ALPHA(0X666666);
-    popView.arrowDirectionPriorityOrder = @[@1];//@[@4,@3,@2,@1];
-    [popView popViewShow:YES];
-    [popView popViewShowInView:toView animated:NO];
+//    popView.arrowDirectionPriorityOrder = @[@1];//@[@4,@3,@2,@1];
+    popView.arrowDirection = UIPopViewArrowDirectionUp;
+//    [popView popViewShow:YES];
+//    [popView popViewShowInView:toView animated:NO];
     [popView popViewFromOverView:sender showInView:nil animated:YES];
 }
 
